@@ -21,7 +21,7 @@ https://github.com/tanersb/Steam-Friends-Exporter/raw/refs/heads/main/steam-frie
 
 ## Usage
 
-1.Go to your Steam friends page  use button 
+1. Go to your Steam friends page  use button 
    Example:steam_friends_TanerSB_4.csv
    
 2. Bottom-right panel will appear.
