@@ -15,7 +15,7 @@ Exports your Steam friends list to CSV with one click.
 1. Install Tampermonkey extension.
 2. Open this link:
 
-https://raw.githubusercontent.com/tanersb/Steam-Friends-Exporter/blob/main/steam-friends-export.user.js
+https://github.com/tanersb/Steam-Friends-Exporter/raw/refs/heads/main/steam-friends-export.user.js
 
 
 3. Click Install.
