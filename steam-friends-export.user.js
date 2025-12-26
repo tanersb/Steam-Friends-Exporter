@@ -1,12 +1,12 @@
 // ==UserScript==
 // @name         Steam Friends Exporter
 // @namespace    https://github.com/tanersb/Steam-Friends-Exporter
-// @version      1.2.1
+// @version      1.2.2
 // @description  Export Steam friends list to CSV with account owner info.
 // @author       Taner Şahin
 // @match        https://steamcommunity.com/*/friends*
-// @updateURL    https://raw.githubusercontent.com/tanersb/LinkedIn-Fast-Sequential-Auto-Connect/main/steam-friends-export.user.js
-// @downloadURL  https://raw.githubusercontent.com/tanersb/LinkedIn-Fast-Sequential-Auto-Connect/main/steam-friends-export.user.js
+// @updateURL    https://github.com/tanersb/Steam-Friends-Exporter/raw/refs/heads/main/steam-friends-export.user.js
+// @downloadURL  https://github.com/tanersb/Steam-Friends-Exporter/raw/refs/heads/main/steam-friends-export.user.js
 // @grant        none
 // ==/UserScript==
 
