@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Steam Friends Exporter
 // @namespace    https://github.com/tanersb/Steam-Friends-Exporter
-// @version      1.2.2
+// @version      1.2.3
 // @description  Export Steam friends list to CSV with account owner info.
 // @author       Taner Şahin
 // @match        https://steamcommunity.com/*/friends*
@@ -63,10 +63,19 @@
             ].join(",") + "\n";
         });
 
+        // --- TARİH EKLEME KISMI BAŞLANGICI ---
+        const now = new Date();
+        const day = String(now.getDate()).padStart(2, '0');
+        const month = String(now.getMonth() + 1).padStart(2, '0'); // Aylar 0'dan başlar, o yüzden +1
+        const year = now.getFullYear();
+        const dateStr = `${day}_${month}_${year}`;
+        // --- TARİH EKLEME KISMI BİTİŞİ ---
+
         const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
         const a = document.createElement("a");
         a.href = URL.createObjectURL(blob);
-        a.download = `steam_friends_${owner}_${friends.length}.csv`;
+        // Dosya adı: steam_friends_kullanici_sayi_05_01_2026.csv
+        a.download = `steam_friends_${owner}_${friends.length}_${dateStr}.csv`;
         a.click();
         URL.revokeObjectURL(a.href);
     }
